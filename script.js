@@ -103,8 +103,8 @@ function AddElementsToPage(){
         <th>${arra[i].discount}</th>
         <th>${arra[i].total}</th>
         <th>${arra[i].cetegory}</th>
-        <th><button onclick="updateData(${i})" id="update">Update</button></th>
-        <th><button onclick="deleteOne()">Delete</button></th>
+        <th><button id="update" onclick="updateData(${i})" id="update">Update</button></th>
+        <th><button id="delete" onclick="deleteOne()">Delete</button></th>
     </tr>
         `;
     }
