@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Untitled-1.jpg">
+</head>
+<body>
+     <div class="crud">
+
+        <div class="header">
+            <h2>CRUDS</h2>
+            <p style="text-transform: uppercase;">Create Read Update Delete Search</p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Title">
+            <div class="prices">
+                <input type="number" id="price" placeholder="Price" onkeyup="Calcualte()">
+                <input type="number" id="taxes" placeholder="Taxes" onkeyup="Calcualte()">
+                <input type="number" id="ads" placeholder="Ads" onkeyup="Calcualte()">
+                <input type="number" id="discount" placeholder="Discount" onkeyup="Calcualte()">
+                <small id="total-price"></small>
+            </div>
+            <input type="text" placeholder="Qunatity" id="count">
+            <input type="text" placeholder="Category" id="cetegory">
+            <button id="submit">Create</button>
+            <input type="text" placeholder="Search" id="search" onkeyup="searchData(this.value)">
+
+            <div class="buttons">
+            <button onclick="getSearchMood(this.id)" id="searchTitleBtn">Search By Title</button>
+            <button onclick="getSearchMood(this.id)" id="searchCategoryBtn">Search By Category</button>
+           </div>
+           <button id="removeAll" onclick="deleteAll()" style="display: none;"></button>
+
+        </div>
+
+
+        <div class="outputs">
+
+        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>GATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+
+            <tbody id="tBody">
+
+            </tbody>
+
+        </table>
+       
+
+        </div>
+
+
+        <button id="down">&downarrow;</button>
+
+     </div>
+
+
+     <script src="script.js"></script>
+</body>
+</html>

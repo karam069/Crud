@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    text-align: center;
+}
+input{
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    padding: 5px;
+    color: white;
+}
+input:focus{
+    transform: scale(1.02);
+}
+.prices{
+    display: flex;
+}
+.prices small{
+    background-color: #000;
+    width: 30%;
+    margin: auto;
+    padding: 7px 5px;
+    border-radius: 3px;
+}
+.prices small::before{
+   content: "Total: ";
+}
+button{
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 3px;
+    margin: 3px;
+    border: none;
+    outline: none;
+    transition: .5s;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: rgb(240, 215, 76);
+}
+.buttons{
+    display: flex;
+}
+
+table{
+    width: 100%;
+}
+#down{
+    color: black;
+    background-color: #fff;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    color: black;
+    margin: 10px;
+    display: none;
+}
+
+#down:hover{
+    background-color: gold;
+}
